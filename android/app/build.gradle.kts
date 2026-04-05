@@ -7,20 +7,33 @@ plugins {
 
 android {
     namespace = "com.yeudaby.sixheaven"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.yeudaby.sixheaven"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 35
+        versionCode = 2
+        versionName = "0.2-beta"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        create("release") {
+            val storeFilePath = project.findProperty("MYAPP_UPLOAD_STORE_FILE") as String?
+            if (storeFilePath != null) {
+                storeFile = file(storeFilePath)
+                storePassword = project.findProperty("MYAPP_UPLOAD_STORE_PASSWORD") as String?
+                keyAlias = project.findProperty("MYAPP_UPLOAD_KEY_ALIAS") as String?
+                keyPassword = project.findProperty("MYAPP_UPLOAD_KEY_PASSWORD") as String?
+            }
+        }
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -36,6 +49,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
@@ -55,6 +69,7 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.ui.text.google.fonts)
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     // Lifecycle
