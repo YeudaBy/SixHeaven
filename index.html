@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SixHeaven – Kashrut Timer App</title>
 
   <!-- ── Primary SEO ── -->
-  <meta name="description" content="SixHeaven helps you manage the waiting time between meat and dairy with beautiful timers, home screen widgets, and persistent notifications — tailored to your custom Kashrut traditions." />
-  <meta name="keywords" content="Kashrut, kosher timer, meat dairy wait, six hours, כשרות, Android app, שש שעות, Jewish app" />
+  <meta name="description"
+    content="SixHeaven helps you manage the waiting time between meat and dairy with beautiful timers, home screen widgets, and persistent notifications — tailored to your custom Kashrut traditions." />
+  <meta name="keywords"
+    content="Kashrut, kosher timer, meat dairy wait, six hours, כשרות, Android app, שש שעות, Jewish app" />
   <meta name="author" content="SixHeaven" />
-  <link rel="canonical" href="https://YOUR_DOMAIN.com/" />
+  <link rel="canonical" href="https://sixheaven.yeudaby.com/" />
+
+  <!-- ── Favicon & Touch Icons ── -->
+  <link rel="apple-touch-icon" sizes="180x180" href="landing/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" sizes="32x32" href="landing/logo.svg">
+  <link rel="icon" type="image/svg+xml" sizes="16x16" href="landing/logo.svg">
+  <link rel="manifest" href="landing/site.webmanifest">
 
   <!-- ── Open Graph (WhatsApp, Telegram, Facebook) ── -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://YOUR_DOMAIN.com/" />
-  <meta property="og:title"       content="SixHeaven – Kashrut Timer App" />
-  <meta property="og:description" content="Track meat-to-dairy and dairy-to-meat waiting times effortlessly. Beautiful timers, widgets, and exact alarms — tailored to your minhag." />
-  <meta property="og:image"       content="https://YOUR_DOMAIN.com/og-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sixheaven.yeudaby.com/" />
+  <meta property="og:title" content="SixHeaven – Kashrut Timer App" />
+  <meta property="og:description"
+    content="Track meat-to-dairy and dairy-to-meat waiting times effortlessly. Beautiful timers, widgets, and exact alarms — tailored to your minhag." />
+  <meta property="og:image" content="https://sixheaven.yeudaby.com/landing/banner.png" />
   <!-- Recommended og:image size: 1200×630px. Replace with your hosted screenshot. -->
-  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:locale"       content="en_IL" />
-  <meta property="og:site_name"    content="SixHeaven" />
+  <meta property="og:locale" content="en_IL" />
+  <meta property="og:site_name" content="SixHeaven" />
 
   <!-- ── Twitter / X Card ── -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:url"         content="https://YOUR_DOMAIN.com/" />
-  <meta name="twitter:title"       content="SixHeaven – Kashrut Timer App" />
-  <meta name="twitter:description" content="Track meat-to-dairy and dairy-to-meat waiting times effortlessly. Widgets, exact alarms, and persistent notifications for Android." />
-  <meta name="twitter:image"       content="https://YOUR_DOMAIN.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://sixheaven.yeudaby.com/" />
+  <meta name="twitter:title" content="SixHeaven – Kashrut Timer App" />
+  <meta name="twitter:description"
+    content="Track meat-to-dairy and dairy-to-meat waiting times effortlessly. Widgets, exact alarms, and persistent notifications for Android." />
+  <meta name="twitter:image" content="https://sixheaven.yeudaby.com/landing/banner.png" />
   <!-- Optional: <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE" /> -->
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet" />
 
   <script>
     tailwind.config = {
@@ -57,8 +70,16 @@
   </script>
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'DM Sans', system-ui, sans-serif;
       background: #F8FAFC;
@@ -80,8 +101,8 @@
     nav {
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
-      background: rgba(248,250,252,0.82);
-      border-bottom: 1px solid rgba(128,10,44,0.08);
+      background: rgba(248, 250, 252, 0.82);
+      border-bottom: 1px solid rgba(128, 10, 44, 0.08);
     }
 
     /* ── Hero ── */
@@ -89,8 +110,8 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(128,10,44,0.07);
-      border: 1px solid rgba(128,10,44,0.18);
+      background: rgba(128, 10, 44, 0.07);
+      border: 1px solid rgba(128, 10, 44, 0.18);
       color: #800A2C;
       border-radius: 9999px;
       padding: 4px 14px;
@@ -105,16 +126,17 @@
       width: 220px;
       height: 440px;
       border-radius: 40px;
-      border: 2px solid rgba(128,10,44,0.25);
+      border: 2px solid rgba(128, 10, 44, 0.25);
       background: #fff;
       box-shadow:
-        0 40px 80px -20px rgba(128,10,44,0.18),
-        0 4px 20px rgba(56,189,248,0.12),
+        0 40px 80px -20px rgba(128, 10, 44, 0.18),
+        0 4px 20px rgba(56, 189, 248, 0.12),
         inset 0 0 0 6px #F8FAFC;
       position: relative;
       overflow: hidden;
       flex-shrink: 0;
     }
+
     .phone-notch {
       position: absolute;
       top: 14px;
@@ -122,9 +144,10 @@
       transform: translateX(-50%);
       width: 60px;
       height: 10px;
-      background: rgba(128,10,44,0.18);
+      background: rgba(128, 10, 44, 0.18);
       border-radius: 9999px;
     }
+
     .phone-screen {
       position: absolute;
       inset: 28px 8px 12px;
@@ -144,6 +167,7 @@
       stroke: #f0e0e5;
       stroke-width: 6;
     }
+
     .ring-progress {
       fill: none;
       stroke: url(#ringGrad);
@@ -155,9 +179,15 @@
       transform-origin: center;
       animation: ringPulse 3s ease-in-out infinite alternate;
     }
+
     @keyframes ringPulse {
-      from { stroke-dashoffset: 68; }
-      to   { stroke-dashoffset: 80; }
+      from {
+        stroke-dashoffset: 68;
+      }
+
+      to {
+        stroke-dashoffset: 80;
+      }
     }
 
     /* ── Buttons ── */
@@ -176,13 +206,15 @@
       border: none;
       cursor: pointer;
       transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-      box-shadow: 0 4px 20px rgba(128,10,44,0.28);
+      box-shadow: 0 4px 20px rgba(128, 10, 44, 0.28);
     }
+
     .btn-primary:hover {
       background: #6b0825;
       transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(128,10,44,0.38);
+      box-shadow: 0 8px 32px rgba(128, 10, 44, 0.38);
     }
+
     .btn-outline {
       display: inline-flex;
       align-items: center;
@@ -195,15 +227,17 @@
       padding: 11px 24px;
       border-radius: 14px;
       text-decoration: none;
-      border: 2px solid rgba(128,10,44,0.35);
+      border: 2px solid rgba(128, 10, 44, 0.35);
       cursor: pointer;
       transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
     }
+
     .btn-outline:hover {
       border-color: #800A2C;
-      background: rgba(128,10,44,0.05);
+      background: rgba(128, 10, 44, 0.05);
       transform: translateY(-2px);
     }
+
     .btn-sky {
       display: inline-flex;
       align-items: center;
@@ -219,40 +253,47 @@
       border: none;
       cursor: pointer;
       transition: transform 0.18s ease, box-shadow 0.18s ease;
-      box-shadow: 0 4px 20px rgba(56,189,248,0.3);
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
     }
+
     .btn-sky:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(56,189,248,0.45);
+      box-shadow: 0 8px 32px rgba(56, 189, 248, 0.45);
     }
 
     /* ── Feature cards ── */
     .feature-card {
       background: #fff;
-      border: 1px solid rgba(128,10,44,0.08);
+      border: 1px solid rgba(128, 10, 44, 0.08);
       border-radius: 24px;
       padding: 32px 28px;
       transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
       position: relative;
       overflow: hidden;
     }
+
     .feature-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 3px;
       background: linear-gradient(90deg, #800A2C, #A21CAF, #38BDF8);
       opacity: 0;
       transition: opacity 0.22s ease;
     }
+
     .feature-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 20px 60px rgba(128,10,44,0.10);
-      border-color: rgba(128,10,44,0.15);
+      box-shadow: 0 20px 60px rgba(128, 10, 44, 0.10);
+      border-color: rgba(128, 10, 44, 0.15);
     }
+
     .feature-card:hover::before {
       opacity: 1;
     }
+
     .feature-icon {
       width: 52px;
       height: 52px;
@@ -272,26 +313,31 @@
       overflow: hidden;
       transition: transform 0.22s ease, box-shadow 0.22s ease;
     }
+
     .engage-card:hover {
       transform: translateY(-4px);
     }
+
     .engage-left {
       background: linear-gradient(135deg, #800A2C 0%, #A21CAF 100%);
       color: #fff;
-      box-shadow: 0 20px 60px rgba(128,10,44,0.30);
+      box-shadow: 0 20px 60px rgba(128, 10, 44, 0.30);
     }
+
     .engage-left:hover {
-      box-shadow: 0 28px 70px rgba(128,10,44,0.40);
+      box-shadow: 0 28px 70px rgba(128, 10, 44, 0.40);
     }
+
     .engage-right {
       background: #fff;
-      border: 1.5px solid rgba(56,189,248,0.35);
+      border: 1.5px solid rgba(56, 189, 248, 0.35);
       color: #1a1a2e;
-      box-shadow: 0 20px 60px rgba(56,189,248,0.12);
+      box-shadow: 0 20px 60px rgba(56, 189, 248, 0.12);
     }
+
     .engage-right:hover {
-      box-shadow: 0 28px 70px rgba(56,189,248,0.22);
-      border-color: rgba(56,189,248,0.5);
+      box-shadow: 0 28px 70px rgba(56, 189, 248, 0.22);
+      border-color: rgba(56, 189, 248, 0.5);
     }
 
     /* ── Divider ornament ── */
@@ -314,24 +360,39 @@
 
     /* ── Shimmer on tag ── */
     @keyframes shimmer {
-      0%   { background-position: -200% center; }
-      100% { background-position:  200% center; }
+      0% {
+        background-position: -200% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
     }
+
     .shimmer-dot {
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       border-radius: 9999px;
       background: #800A2C;
       animation: blink 1.6s ease-in-out infinite;
     }
+
     @keyframes blink {
-      0%,100% { opacity:1; }
-      50%      { opacity:0.3; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.3;
+      }
     }
 
     /* ── Notification pill inside phone ── */
     .notif-pill {
-      background: rgba(128,10,44,0.08);
-      border: 1px solid rgba(128,10,44,0.15);
+      background: rgba(128, 10, 44, 0.08);
+      border: 1px solid rgba(128, 10, 44, 0.15);
       border-radius: 12px;
       padding: 8px 12px;
       width: 100%;
@@ -342,29 +403,62 @@
 
     /* ── Fade-in animation ── */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .fade-up { animation: fadeUp 0.7s ease both; }
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.2s; }
-    .delay-3 { animation-delay: 0.35s; }
-    .delay-4 { animation-delay: 0.5s; }
+
+    .fade-up {
+      animation: fadeUp 0.7s ease both;
+    }
+
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.35s;
+    }
+
+    .delay-4 {
+      animation-delay: 0.5s;
+    }
 
     /* ── Ticker strip ── */
     .ticker-wrap {
       overflow: hidden;
       white-space: nowrap;
     }
+
     .ticker-inner {
       display: inline-flex;
       animation: ticker 22s linear infinite;
     }
-    .ticker-inner:hover { animation-play-state: paused; }
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
+
+    .ticker-inner:hover {
+      animation-play-state: paused;
     }
+
+    @keyframes ticker {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
     .ticker-item {
       display: inline-flex;
       align-items: center;
@@ -375,8 +469,10 @@
       color: #800A2C;
       opacity: 0.65;
     }
+
     .ticker-dot {
-      width: 4px; height: 4px;
+      width: 4px;
+      height: 4px;
       border-radius: 9999px;
       background: #A21CAF;
       flex-shrink: 0;
@@ -386,383 +482,462 @@
 
 <body>
 
-<!-- ════════════════════════ NAV ════════════════════════ -->
-<nav class="fixed top-0 left-0 right-0 z-50">
-  <div class="max-w-6xl mx-auto sm:px-6 p-2 sm:py-4 flex items-center justify-between">
-    <!-- Logo + Name -->
-    <a href="#" class="flex items-center gap-3 group">
-      <img src="landing/logo.svg" alt="SixHeaven Logo" width="36" height="36"/>
-      <span class="font-display text-xl text-[#800A2C]">SixHeaven</span>
-    </a>
+  <!-- ════════════════════════ NAV ════════════════════════ -->
+  <nav class="fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-6xl mx-auto sm:px-6 p-2 sm:py-4 flex items-center justify-between">
+      <!-- Logo + Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="landing/logo.svg" alt="SixHeaven Logo" width="36" height="36" />
+        <span class="font-display text-xl text-[#800A2C]">SixHeaven</span>
+      </a>
 
-    <!-- Nav Links -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href="#features" class="text-sm font-medium text-slate-600 hover:text-[#800A2C] transition-colors">Features</a>
-      <a href="#download" class="text-sm font-medium text-slate-600 hover:text-[#800A2C] transition-colors">Download</a>
-      <a href="#engage" class="text-sm font-medium text-slate-600 hover:text-[#800A2C] transition-colors">Join Beta</a>
-    </div>
-
-    <!-- CTA -->
-    <a href="https://github.com/YOUR_USERNAME/SixHeaven/releases/latest" target="_blank" class="btn-primary" style="padding:9px 18px;font-size:0.83rem;border-radius:10px;">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      Download APK
-    </a>
-  </div>
-</nav>
-
-<!-- ════════════════════════ HERO ════════════════════════ -->
-<section id="download" class="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
-
-  <!-- Glow blobs -->
-  <div class="glow-blob w-[520px] h-[420px] bg-[#800A2C]" style="top:-80px;right:-120px;"></div>
-  <div class="glow-blob w-[380px] h-[380px] bg-[#38BDF8]" style="bottom:60px;left:-100px;opacity:0.12;"></div>
-  <div class="glow-blob w-[260px] h-[260px] bg-[#FDE047]" style="top:50%;left:38%;opacity:0.10;"></div>
-
-  <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
-    <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-
-      <!-- Text side -->
-      <div class="flex-1 text-center lg:text-left">
-        <div class="hero-tag fade-up mb-7 inline-flex">
-          <div class="shimmer-dot"></div>
-          Free Android App
-        </div>
-
-        <h1 class="font-display text-5xl md:text-6xl lg:text-[3.8rem] leading-[1.12] text-[#1a1a2e] mb-6 fade-up delay-1">
-          Keep Track of<br/>
-          <span style="background:linear-gradient(135deg,#800A2C,#A21CAF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Your Kashrut Hours.</span><br/>
-          <span class="italic">Effortlessly.</span>
-        </h1>
-
-        <p class="text-slate-500 text-[1.05rem] leading-relaxed max-w-lg mx-auto lg:mx-0 mb-10 fade-up delay-2">
-          <span class="">SixHeaven</span> helps you manage the waiting time between meat and dairy with beautiful timers, home screen widgets, and persistent notifications - tailored to your custom traditions.
-        </p>
-
-        <div class="flex flex-wrap gap-4 justify-center lg:justify-start fade-up delay-3">
-          <a href="https://github.com/YeudaBy/SixHeaven/releases/latest" target="_blank" class="btn-primary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            Download APK
-          </a>
-          <a href="https://forms.gle/8zAs8adK9wxAWHDdA" target="_blank" class="btn-outline">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Join Beta Group
-          </a>
-        </div>
-
-        <!-- Mini stats -->
-        <div class="mt-12 flex gap-8 justify-center lg:justify-start fade-up delay-4">
-          <div>
-            <div class="font-display text-2xl text-[#800A2C]">6+</div>
-            <div class="text-xs text-slate-400 mt-0.5">Timer presets</div>
-          </div>
-          <div class="w-px bg-slate-200"></div>
-          <div>
-            <div class="font-display text-2xl text-[#800A2C]">100%</div>
-            <div class="text-xs text-slate-400 mt-0.5">Free & open</div>
-          </div>
-          <div class="w-px bg-slate-200"></div>
-          <div>
-            <div class="font-display text-2xl text-[#800A2C]">0</div>
-            <div class="text-xs text-slate-400 mt-0.5">Ads / tracking</div>
-          </div>
-        </div>
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features"
+          class="text-sm font-medium text-slate-600 hover:text-[#800A2C] transition-colors">Features</a>
+        <a href="#download"
+          class="text-sm font-medium text-slate-600 hover:text-[#800A2C] transition-colors">Download</a>
+        <a href="#engage" class="text-sm font-medium text-slate-600 hover:text-[#800A2C] transition-colors">Join
+          Beta</a>
       </div>
 
-      <!-- Phone mockup -->
-      <div class="fade-up delay-3 flex-shrink-0" style="perspective:800px;">
-        <div style="transform:rotateY(-6deg) rotateX(3deg);">
-          <div class="phone-shell">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
+      <!-- CTA -->
+      <a href="https://github.com/YOUR_USERNAME/SixHeaven/releases/latest" target="_blank" class="btn-primary"
+        style="padding:9px 18px;font-size:0.83rem;border-radius:10px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        Download APK
+      </a>
+    </div>
+  </nav>
 
-              <!-- Status bar -->
-              <div class="w-full flex justify-between items-center px-1" style="font-size:9px;color:#94a3b8;">
-                <span>09:41</span>
-                <div class="flex gap-1">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="#94a3b8"><rect x="1" y="6" width="4" height="18" rx="1"/><rect x="7" y="10" width="4" height="14" rx="1" opacity=".7"/><rect x="13" y="3" width="4" height="21" rx="1" opacity=".4"/><rect x="19" y="1" width="4" height="23" rx="1" opacity=".2"/></svg>
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="#94a3b8"><path d="M23 7l-3 3a9 9 0 0 0-16 0L1 7a14 14 0 0 1 22 0z" opacity=".4"/><path d="M19 11l-3 3a5 5 0 0 0-8 0l-3-3a10 10 0 0 1 14 0z" opacity=".7"/><circle cx="12" cy="18" r="2"/></svg>
-                  <svg width="14" height="10" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="#94a3b8" stroke-width="1"/><rect x="2" y="2" width="14" height="8" rx="1.5" fill="#800A2C"/><path d="M22 4v4a2 2 0 0 0 0-4z" fill="#94a3b8" opacity=".5"/></svg>
+  <!-- ════════════════════════ HERO ════════════════════════ -->
+  <section id="download" class="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
+
+    <!-- Glow blobs -->
+    <div class="glow-blob w-[520px] h-[420px] bg-[#800A2C]" style="top:-80px;right:-120px;"></div>
+    <div class="glow-blob w-[380px] h-[380px] bg-[#38BDF8]" style="bottom:60px;left:-100px;opacity:0.12;"></div>
+    <div class="glow-blob w-[260px] h-[260px] bg-[#FDE047]" style="top:50%;left:38%;opacity:0.10;"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
+      <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+        <!-- Text side -->
+        <div class="flex-1 text-center lg:text-left">
+          <div class="hero-tag fade-up mb-7 inline-flex">
+            <div class="shimmer-dot"></div>
+            Free Android App
+          </div>
+
+          <h1
+            class="font-display text-5xl md:text-6xl lg:text-[3.8rem] leading-[1.12] text-[#1a1a2e] mb-6 fade-up delay-1">
+            Keep Track of<br />
+            <span
+              style="background:linear-gradient(135deg,#800A2C,#A21CAF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Your
+              Kashrut Hours.</span><br />
+            <span class="italic">Effortlessly.</span>
+          </h1>
+
+          <p class="text-slate-500 text-[1.05rem] leading-relaxed max-w-lg mx-auto lg:mx-0 mb-10 fade-up delay-2">
+            <span class="">SixHeaven</span> helps you manage the waiting time between meat and dairy with beautiful
+            timers, home screen widgets, and persistent notifications - tailored to your custom traditions.
+          </p>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start fade-up delay-3">
+            <a href="https://github.com/YeudaBy/SixHeaven/releases/latest" target="_blank" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              Download APK
+            </a>
+            <a href="https://forms.gle/8zAs8adK9wxAWHDdA" target="_blank" class="btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              Join Beta Group
+            </a>
+          </div>
+
+          <!-- Mini stats -->
+          <div class="mt-12 flex gap-8 justify-center lg:justify-start fade-up delay-4">
+            <div>
+              <div class="font-display text-2xl text-[#800A2C]">6+</div>
+              <div class="text-xs text-slate-400 mt-0.5">Timer presets</div>
+            </div>
+            <div class="w-px bg-slate-200"></div>
+            <div>
+              <div class="font-display text-2xl text-[#800A2C]">100%</div>
+              <div class="text-xs text-slate-400 mt-0.5">Free & open</div>
+            </div>
+            <div class="w-px bg-slate-200"></div>
+            <div>
+              <div class="font-display text-2xl text-[#800A2C]">0</div>
+              <div class="text-xs text-slate-400 mt-0.5">Ads / tracking</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="fade-up delay-3 flex-shrink-0" style="perspective:800px;">
+          <div style="transform:rotateY(-6deg) rotateX(3deg);">
+            <div class="phone-shell">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+
+                <!-- Status bar -->
+                <div class="w-full flex justify-between items-center px-1" style="font-size:9px;color:#94a3b8;">
+                  <span>09:41</span>
+                  <div class="flex gap-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#94a3b8">
+                      <rect x="1" y="6" width="4" height="18" rx="1" />
+                      <rect x="7" y="10" width="4" height="14" rx="1" opacity=".7" />
+                      <rect x="13" y="3" width="4" height="21" rx="1" opacity=".4" />
+                      <rect x="19" y="1" width="4" height="23" rx="1" opacity=".2" />
+                    </svg>
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="#94a3b8">
+                      <path d="M23 7l-3 3a9 9 0 0 0-16 0L1 7a14 14 0 0 1 22 0z" opacity=".4" />
+                      <path d="M19 11l-3 3a5 5 0 0 0-8 0l-3-3a10 10 0 0 1 14 0z" opacity=".7" />
+                      <circle cx="12" cy="18" r="2" />
+                    </svg>
+                    <svg width="14" height="10" viewBox="0 0 24 12" fill="none">
+                      <rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="#94a3b8" stroke-width="1" />
+                      <rect x="2" y="2" width="14" height="8" rx="1.5" fill="#800A2C" />
+                      <path d="M22 4v4a2 2 0 0 0 0-4z" fill="#94a3b8" opacity=".5" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
 
-              <!-- App header -->
-              <div class="w-full text-center" style="font-size:11px;font-weight:700;color:#800A2C;letter-spacing:0.06em;margin-top:2px;">SixHeaven</div>
-
-              <!-- Ring timer -->
-              <div style="position:relative;width:130px;height:130px;margin:4px 0;">
-                <svg viewBox="0 0 90 90" width="130" height="130">
-                  <defs>
-                    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#800A2C"/>
-                      <stop offset="100%" stop-color="#A21CAF"/>
-                    </linearGradient>
-                  </defs>
-                  <circle class="ring-track" cx="45" cy="45" r="40"/>
-                  <circle class="ring-progress" cx="45" cy="45" r="40"/>
-                </svg>
-                <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;">
-                  <span id="phone-timer" style="font-family:'DM Serif Display',serif;font-size:22px;color:#800A2C;line-height:1;">04:23:10</span>
-                  <span style="font-size:8px;color:#A21CAF;font-weight:600;letter-spacing:0.05em;">HOURS LEFT</span>
+                <!-- App header -->
+                <div class="w-full text-center"
+                  style="font-size:11px;font-weight:700;color:#800A2C;letter-spacing:0.06em;margin-top:2px;">SixHeaven
                 </div>
+
+                <!-- Ring timer -->
+                <div style="position:relative;width:130px;height:130px;margin:4px 0;">
+                  <svg viewBox="0 0 90 90" width="130" height="130">
+                    <defs>
+                      <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#800A2C" />
+                        <stop offset="100%" stop-color="#A21CAF" />
+                      </linearGradient>
+                    </defs>
+                    <circle class="ring-track" cx="45" cy="45" r="40" />
+                    <circle class="ring-progress" cx="45" cy="45" r="40" />
+                  </svg>
+                  <div
+                    style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;">
+                    <span id="phone-timer"
+                      style="font-family:'DM Serif Display',serif;font-size:22px;color:#800A2C;line-height:1;">04:23:10</span>
+                    <span style="font-size:8px;color:#A21CAF;font-weight:600;letter-spacing:0.05em;">HOURS LEFT</span>
+                  </div>
+                </div>
+
+                <!-- Hebrew label -->
+                <div
+                  style="text-align:center;font-size:11px;font-weight:600;color:#1a1a2e;direction:rtl;unicode-bidi:embed;font-family:'DM Sans',sans-serif;"
+                  dir="rtl" lang="he">ממתינים לחלבי...</div>
+                <div style="text-align:center;font-size:9px;color:#94a3b8;margin-top:-4px;">Waiting for dairy</div>
+
+                <!-- Timer preset chips -->
+                <div class="flex gap-1 mt-1">
+                  <span
+                    style="background:#fef2f2;border:1px solid rgba(128,10,44,0.2);border-radius:999px;padding:2px 8px;font-size:8.5px;color:#800A2C;font-weight:600;">6h</span>
+                  <span
+                    style="background:#f5f3ff;border:1px solid rgba(162,28,175,0.2);border-radius:999px;padding:2px 8px;font-size:8.5px;color:#A21CAF;font-weight:600;">5h</span>
+                  <span
+                    style="background:#f0f9ff;border:1px solid rgba(56,189,248,0.3);border-radius:999px;padding:2px 8px;font-size:8.5px;color:#0ea5e9;font-weight:600;">Custom</span>
+                </div>
+
+                <!-- Notification pill -->
+                <div class="notif-pill mt-2">
+                  <div style="font-weight:700;font-size:9.5px;margin-bottom:1px;">🔔 SixHeaven</div>
+                  <div style="font-size:8.5px;opacity:0.8;direction:rtl;unicode-bidi:embed;" dir="rtl" lang="he">עוד 4
+                    שעות ו-23 דקות לחלבי</div>
+                </div>
+
               </div>
-
-              <!-- Hebrew label -->
-              <div style="text-align:center;font-size:11px;font-weight:600;color:#1a1a2e;direction:rtl;unicode-bidi:embed;font-family:'DM Sans',sans-serif;" dir="rtl" lang="he">ממתינים לחלבי...</div>
-              <div style="text-align:center;font-size:9px;color:#94a3b8;margin-top:-4px;">Waiting for dairy</div>
-
-              <!-- Timer preset chips -->
-              <div class="flex gap-1 mt-1">
-                <span style="background:#fef2f2;border:1px solid rgba(128,10,44,0.2);border-radius:999px;padding:2px 8px;font-size:8.5px;color:#800A2C;font-weight:600;">6h</span>
-                <span style="background:#f5f3ff;border:1px solid rgba(162,28,175,0.2);border-radius:999px;padding:2px 8px;font-size:8.5px;color:#A21CAF;font-weight:600;">5h</span>
-                <span style="background:#f0f9ff;border:1px solid rgba(56,189,248,0.3);border-radius:999px;padding:2px 8px;font-size:8.5px;color:#0ea5e9;font-weight:600;">Custom</span>
-              </div>
-
-              <!-- Notification pill -->
-              <div class="notif-pill mt-2">
-                <div style="font-weight:700;font-size:9.5px;margin-bottom:1px;">🔔 SixHeaven</div>
-                <div style="font-size:8.5px;opacity:0.8;direction:rtl;unicode-bidi:embed;" dir="rtl" lang="he">עוד 4 שעות ו-23 דקות לחלבי</div>
-              </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ════════════════════════ TICKER ════════════════════════ -->
-<div class="ticker-wrap py-4 border-y border-slate-100 bg-white/70">
-  <div class="ticker-inner">
-    <!-- duplicated for seamless loop -->
-    <template id="ticker-tpl">
-      <span class="ticker-item">Persistent Notifications <span class="ticker-dot"></span></span>
-      <span class="ticker-item">Home Screen Widgets <span class="ticker-dot"></span></span>
-      <span class="ticker-item">Lock Screen Widgets <span class="ticker-dot"></span></span>
-      <span class="ticker-item">Custom Meat Wait Times <span class="ticker-dot"></span></span>
-      <span class="ticker-item">Quick Settings Tile <span class="ticker-dot"></span></span>
-      <span class="ticker-item">Exact Alarm Support <span class="ticker-dot"></span></span>
-      <span class="ticker-item"><span dir="rtl" lang="he" style="unicode-bidi:embed;">רוב שש</span> Support <span class="ticker-dot"></span></span>
-      <span class="ticker-item">No Ads · Open Source <span class="ticker-dot"></span></span>
-    </template>
-  </div>
-</div>
-<script>
-  const tpl = document.getElementById('ticker-tpl');
-  const inner = document.querySelector('.ticker-inner');
-  const html = tpl.innerHTML.repeat(2);
-  inner.innerHTML = html;
-</script>
-
-<!-- ════════════════════════ FEATURES ════════════════════════ -->
-<section id="features" class="py-28 relative overflow-hidden">
-  <div class="glow-blob w-[400px] h-[400px] bg-[#A21CAF]" style="top:-60px;right:-100px;opacity:0.09;"></div>
-
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <div class="ornament"></div>
-      <p class="section-label mb-3">What it does</p>
-      <h2 class="font-display text-4xl md:text-5xl text-[#1a1a2e]">Built around your<br/><em>tradition.</em></h2>
-      <p class="text-slate-500 mt-4 text-[1.02rem] max-w-xl mx-auto">Every community has its own minhag. SixHeaven adapts — not the other way around.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <!-- Card 1 -->
-      <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(128,10,44,0.08);">🥩</div>
-        <h3 class="font-display text-2xl text-[#1a1a2e] mb-3">Meat → Dairy</h3>
-        <p class="text-slate-500 text-[0.92rem] leading-relaxed">
-          Defaults to the classic 6-hour wait. Also supports a full <strong>5-hour</strong> wait, or <strong><span dir="rtl" lang="he" style="unicode-bidi:embed;">"רוב שש"</span></strong> (5h 31m) for those who follow that custom. Need something else? Set any duration you like.
-        </p>
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(128,10,44,0.08);color:#800A2C;">6 hours</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(162,28,175,0.08);color:#A21CAF;">5 hours</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(56,189,248,0.1);color:#0ea5e9;" dir="rtl" lang="he">רוב שש</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#f8fafc;color:#64748b;border:1px solid #e2e8f0;">Custom</span>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(56,189,248,0.10);">🥛</div>
-        <h3 class="font-display text-2xl text-[#1a1a2e] mb-3">Dairy → Meat</h3>
-        <p class="text-slate-500 text-[0.92rem] leading-relaxed">
-          Track the dairy-to-meat wait with equal precision. Choose <strong>30 minutes</strong>, <strong>1 hour</strong>, or the full <strong>6-hour</strong> wait — all within the same clean interface.
-        </p>
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(56,189,248,0.10);color:#0ea5e9;">30 min</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(56,189,248,0.10);color:#0ea5e9;">1 hour</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(56,189,248,0.10);color:#0ea5e9;">6 hours</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#f8fafc;color:#64748b;border:1px solid #e2e8f0;">Custom</span>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="feature-card">
-        <div class="feature-icon" style="background:rgba(253,224,71,0.15);">🔔</div>
-        <h3 class="font-display text-2xl text-[#1a1a2e] mb-3">Smart Integration</h3>
-        <p class="text-slate-500 text-[0.92rem] leading-relaxed">
-          Persistent notifications keep your timer visible at all times. <strong>Exact alarms</strong> fire precisely when your wait is up. Toggle from the Quick Settings tile — no need to even open the app.
-        </p>
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(253,224,71,0.15);color:#b45309;">Persistent Notif.</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(253,224,71,0.15);color:#b45309;">Exact Alarm</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(253,224,71,0.15);color:#b45309;">Widgets</span>
-          <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:rgba(253,224,71,0.15);color:#b45309;">Quick Tile</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Secondary feature row -->
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="feature-card flex flex-row items-start gap-5">
-        <div class="feature-icon flex-shrink-0" style="background:rgba(128,10,44,0.07);margin-bottom:0;">📲</div>
-        <div>
-          <h3 class="font-display text-xl text-[#1a1a2e] mb-2">Home & Lock Screen Widgets</h3>
-          <p class="text-slate-500 text-sm leading-relaxed">Check your remaining wait at a glance without unlocking your phone. The countdown widget sits beautifully on any home screen layout.</p>
-        </div>
-      </div>
-      <div class="feature-card flex flex-row items-start gap-5">
-        <div class="feature-icon flex-shrink-0" style="background:rgba(162,28,175,0.07);margin-bottom:0;">🔓</div>
-        <div>
-          <h3 class="font-display text-xl text-[#1a1a2e] mb-2">Open Source & Ad-Free</h3>
-          <p class="text-slate-500 text-sm leading-relaxed">No subscriptions, no data collection, no ads. SixHeaven is fully open source — you can inspect every line of code on GitHub.</p>
-        </div>
-      </div>
+  <!-- ════════════════════════ TICKER ════════════════════════ -->
+  <div class="ticker-wrap py-4 border-y border-slate-100 bg-white/70">
+    <div class="ticker-inner">
+      <!-- duplicated for seamless loop -->
+      <template id="ticker-tpl">
+        <span class="ticker-item">Persistent Notifications <span class="ticker-dot"></span></span>
+        <span class="ticker-item">Home Screen Widgets <span class="ticker-dot"></span></span>
+        <span class="ticker-item">Lock Screen Widgets <span class="ticker-dot"></span></span>
+        <span class="ticker-item">Custom Meat Wait Times <span class="ticker-dot"></span></span>
+        <span class="ticker-item">Quick Settings Tile <span class="ticker-dot"></span></span>
+        <span class="ticker-item">Exact Alarm Support <span class="ticker-dot"></span></span>
+        <span class="ticker-item"><span dir="rtl" lang="he" style="unicode-bidi:embed;">רוב שש</span> Support <span
+            class="ticker-dot"></span></span>
+        <span class="ticker-item">No Ads · Open Source <span class="ticker-dot"></span></span>
+      </template>
     </div>
   </div>
-</section>
+  <script>
+    const tpl = document.getElementById('ticker-tpl');
+    const inner = document.querySelector('.ticker-inner');
+    const html = tpl.innerHTML.repeat(2);
+    inner.innerHTML = html;
+  </script>
 
-<!-- ════════════════════════ ENGAGEMENT ════════════════════════ -->
-<section id="engage" class="py-28 bg-[#F8FAFC] relative overflow-hidden">
-  <div class="glow-blob w-[500px] h-[400px] bg-[#38BDF8]" style="bottom:-100px;right:-80px;opacity:0.10;"></div>
-  <div class="glow-blob w-[360px] h-[360px] bg-[#800A2C]" style="top:-80px;left:-80px;opacity:0.09;"></div>
+  <!-- ════════════════════════ FEATURES ════════════════════════ -->
+  <section id="features" class="py-28 relative overflow-hidden">
+    <div class="glow-blob w-[400px] h-[400px] bg-[#A21CAF]" style="top:-60px;right:-100px;opacity:0.09;"></div>
 
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-14">
-      <div class="ornament"></div>
-      <p class="section-label mb-3">Community</p>
-      <h2 class="font-display text-4xl md:text-5xl text-[#1a1a2e]">Help shape<br/><em>SixHeaven.</em></h2>
-      <p class="text-slate-500 mt-4 text-[1.02rem] max-w-md mx-auto">Early users are the heart of this project. Test, suggest, and report — your voice matters.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <!-- Beta card -->
-      <div class="engage-card engage-left">
-        <!-- Decorative star sparkles -->
-        <div style="position:absolute;top:24px;right:28px;opacity:0.3;font-size:22px;">✦</div>
-        <div style="position:absolute;bottom:36px;right:56px;opacity:0.2;font-size:12px;">✦</div>
-
-        <div style="font-size:40px;margin-bottom:18px;">🚀</div>
-        <h3 class="font-display text-3xl text-white mb-3">Be a Pioneer</h3>
-        <p class="text-white/75 text-[0.93rem] leading-relaxed mb-8">
-          Get access to early builds before they're released. Test new features, report what breaks, and directly influence where the app goes next. Shape SixHeaven from the inside.
-        </p>
-        <a href="https://forms.gle/Kc6LCvVVyiBMkbac7" target="_blank" class="btn-sky" style="background:#fff;color:#800A2C;box-shadow:0 4px 20px rgba(0,0,0,0.15);">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          Join the Beta Test
-        </a>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="ornament"></div>
+        <p class="section-label mb-3">What it does</p>
+        <h2 class="font-display text-4xl md:text-5xl text-[#1a1a2e]">Built around your<br /><em>tradition.</em></h2>
+        <p class="text-slate-500 mt-4 text-[1.02rem] max-w-xl mx-auto">Every community has its own minhag. SixHeaven
+          adapts — not the other way around.</p>
       </div>
 
-      <!-- Feedback card -->
-      <div class="engage-card engage-right">
-        <div style="font-size:40px;margin-bottom:18px;">💬</div>
-        <h3 class="font-display text-3xl text-[#1a1a2e] mb-3">Share Your Thoughts</h3>
-        <p class="text-slate-500 text-[0.93rem] leading-relaxed mb-8">
-          Have an idea for a feature? Found a bug? Or maybe just want to share how you use the app? Every message is read personally, and your feedback drives every update.
-        </p>
-        <a href="https://forms.gle/nEGD7XGn5W4YT6ui8" target="_blank" class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Send Feedback
-        </a>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(128,10,44,0.08);">🥩</div>
+          <h3 class="font-display text-2xl text-[#1a1a2e] mb-3">Meat → Dairy</h3>
+          <p class="text-slate-500 text-[0.92rem] leading-relaxed">
+            Defaults to the classic 6-hour wait. Also supports a full <strong>5-hour</strong> wait, or <strong><span
+                dir="rtl" lang="he" style="unicode-bidi:embed;">"רוב שש"</span></strong> (5h 31m) for those who follow
+            that custom. Need something else? Set any duration you like.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(128,10,44,0.08);color:#800A2C;">6 hours</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(162,28,175,0.08);color:#A21CAF;">5 hours</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(56,189,248,0.1);color:#0ea5e9;" dir="rtl" lang="he">רוב שש</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:#f8fafc;color:#64748b;border:1px solid #e2e8f0;">Custom</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(56,189,248,0.10);">🥛</div>
+          <h3 class="font-display text-2xl text-[#1a1a2e] mb-3">Dairy → Meat</h3>
+          <p class="text-slate-500 text-[0.92rem] leading-relaxed">
+            Track the dairy-to-meat wait with equal precision. Choose <strong>30 minutes</strong>, <strong>1
+              hour</strong>, or the full <strong>6-hour</strong> wait — all within the same clean interface.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(56,189,248,0.10);color:#0ea5e9;">30 min</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(56,189,248,0.10);color:#0ea5e9;">1 hour</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(56,189,248,0.10);color:#0ea5e9;">6 hours</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:#f8fafc;color:#64748b;border:1px solid #e2e8f0;">Custom</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card">
+          <div class="feature-icon" style="background:rgba(253,224,71,0.15);">🔔</div>
+          <h3 class="font-display text-2xl text-[#1a1a2e] mb-3">Smart Integration</h3>
+          <p class="text-slate-500 text-[0.92rem] leading-relaxed">
+            Persistent notifications keep your timer visible at all times. <strong>Exact alarms</strong> fire precisely
+            when your wait is up. Toggle from the Quick Settings tile — no need to even open the app.
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(253,224,71,0.15);color:#b45309;">Persistent Notif.</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(253,224,71,0.15);color:#b45309;">Exact Alarm</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(253,224,71,0.15);color:#b45309;">Widgets</span>
+            <span class="text-xs font-semibold px-3 py-1 rounded-full"
+              style="background:rgba(253,224,71,0.15);color:#b45309;">Quick Tile</span>
+          </div>
+        </div>
+
       </div>
 
+      <!-- Secondary feature row -->
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="feature-card flex flex-row items-start gap-5">
+          <div class="feature-icon flex-shrink-0" style="background:rgba(128,10,44,0.07);margin-bottom:0;">📲</div>
+          <div>
+            <h3 class="font-display text-xl text-[#1a1a2e] mb-2">Home & Lock Screen Widgets</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Check your remaining wait at a glance without unlocking
+              your phone. The countdown widget sits beautifully on any home screen layout.</p>
+          </div>
+        </div>
+        <div class="feature-card flex flex-row items-start gap-5">
+          <div class="feature-icon flex-shrink-0" style="background:rgba(162,28,175,0.07);margin-bottom:0;">🔓</div>
+          <div>
+            <h3 class="font-display text-xl text-[#1a1a2e] mb-2">Open Source & Ad-Free</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">No subscriptions, no data collection, no ads. SixHeaven is
+              fully open source — you can inspect every line of code on GitHub.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ════════════════════════ FOOTER ════════════════════════ -->
-<footer class="bg-white border-t border-slate-100 py-10">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <!-- LOGO SVG PLACEHOLDER ─ same as nav, replace inner path(s) with your custom SVG -->
-      <svg width="28" height="28" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="SixHeaven logo">
-        <defs>
-          <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%"   stop-color="#800A2C"/>
-            <stop offset="100%" stop-color="#A21CAF"/>
-          </linearGradient>
-        </defs>
-        <img src="landing/logo.svg" alt="SixHeaven Logo" width="28" height="28" style="fill:url(#footerLogoGrad);">
-      </svg>
-      <span class="font-display text-[#800A2C]">SixHeaven</span>
+  <!-- ════════════════════════ ENGAGEMENT ════════════════════════ -->
+  <section id="engage" class="py-28 bg-[#F8FAFC] relative overflow-hidden">
+    <div class="glow-blob w-[500px] h-[400px] bg-[#38BDF8]" style="bottom:-100px;right:-80px;opacity:0.10;"></div>
+    <div class="glow-blob w-[360px] h-[360px] bg-[#800A2C]" style="top:-80px;left:-80px;opacity:0.09;"></div>
+
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <div class="ornament"></div>
+        <p class="section-label mb-3">Community</p>
+        <h2 class="font-display text-4xl md:text-5xl text-[#1a1a2e]">Help shape<br /><em>SixHeaven.</em></h2>
+        <p class="text-slate-500 mt-4 text-[1.02rem] max-w-md mx-auto">Early users are the heart of this project. Test,
+          suggest, and report — your voice matters.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Beta card -->
+        <div class="engage-card engage-left">
+          <!-- Decorative star sparkles -->
+          <div style="position:absolute;top:24px;right:28px;opacity:0.3;font-size:22px;">✦</div>
+          <div style="position:absolute;bottom:36px;right:56px;opacity:0.2;font-size:12px;">✦</div>
+
+          <div style="font-size:40px;margin-bottom:18px;">🚀</div>
+          <h3 class="font-display text-3xl text-white mb-3">Be a Pioneer</h3>
+          <p class="text-white/75 text-[0.93rem] leading-relaxed mb-8">
+            Get access to early builds before they're released. Test new features, report what breaks, and directly
+            influence where the app goes next. Shape SixHeaven from the inside.
+          </p>
+          <a href="https://forms.gle/Kc6LCvVVyiBMkbac7" target="_blank" class="btn-sky"
+            style="background:#fff;color:#800A2C;box-shadow:0 4px 20px rgba(0,0,0,0.15);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+            Join the Beta Test
+          </a>
+        </div>
+
+        <!-- Feedback card -->
+        <div class="engage-card engage-right">
+          <div style="font-size:40px;margin-bottom:18px;">💬</div>
+          <h3 class="font-display text-3xl text-[#1a1a2e] mb-3">Share Your Thoughts</h3>
+          <p class="text-slate-500 text-[0.93rem] leading-relaxed mb-8">
+            Have an idea for a feature? Found a bug? Or maybe just want to share how you use the app? Every message is
+            read personally, and your feedback drives every update.
+          </p>
+          <a href="https://forms.gle/nEGD7XGn5W4YT6ui8" target="_blank" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            Send Feedback
+          </a>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <p class="text-xs text-slate-400 text-center">
-      © 2026 SixHeaven. Built with ♥ for the Jewish community. Free & open source.
-    </p>
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  <footer class="bg-white border-t border-slate-100 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <!-- LOGO SVG PLACEHOLDER ─ same as nav, replace inner path(s) with your custom SVG -->
+        <svg width="28" height="28" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+          aria-label="SixHeaven logo">
+          <defs>
+            <linearGradient id="footerLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#800A2C" />
+              <stop offset="100%" stop-color="#A21CAF" />
+            </linearGradient>
+          </defs>
+          <img src="landing/logo.svg" alt="SixHeaven Logo" width="28" height="28" style="fill:url(#footerLogoGrad);">
+        </svg>
+        <span class="font-display text-[#800A2C]">SixHeaven</span>
+      </div>
 
-    <a href="https://github.com/yeudaby/SixHeaven" target="_blank" class="flex items-center gap-2 text-xs text-slate-500 hover:text-[#800A2C] transition-colors font-medium">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      View on GitHub
-    </a>
-  </div>
-</footer>
+      <p class="text-xs text-slate-400 text-center">
+        © 2026 SixHeaven. Built with ♥ for the Jewish community. Free & open source.
+      </p>
 
-<!-- ════════════════════════ LIVE COUNTDOWN ════════════════════════ -->
-<script>
-  (function () {
-    // Starting time: 4 hours, 23 minutes, 10 seconds
-    var totalSeconds = 4 * 3600 + 23 * 60 + 10;
+      <a href="https://github.com/yeudaby/SixHeaven" target="_blank"
+        class="flex items-center gap-2 text-xs text-slate-500 hover:text-[#800A2C] transition-colors font-medium">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        View on GitHub
+      </a>
+    </div>
+  </footer>
 
-    // Total duration for ring arc calculation (6 hours in seconds)
-    var totalDuration = 6 * 3600;
+  <!-- ════════════════════════ LIVE COUNTDOWN ════════════════════════ -->
+  <script>
+    (function () {
+      // Starting time: 4 hours, 23 minutes, 10 seconds
+      var totalSeconds = 4 * 3600 + 23 * 60 + 10;
 
-    var timerEl = document.getElementById('phone-timer');
-    var ringEl  = document.querySelector('.ring-progress');
+      // Total duration for ring arc calculation (6 hours in seconds)
+      var totalDuration = 6 * 3600;
 
-    // Circumference of the ring circle (r=40): 2π×40 ≈ 251.3
-    var CIRC = 251.3;
+      var timerEl = document.getElementById('phone-timer');
+      var ringEl = document.querySelector('.ring-progress');
 
-    function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      // Circumference of the ring circle (r=40): 2π×40 ≈ 251.3
+      var CIRC = 251.3;
 
-    function tick() {
-      if (totalSeconds <= 0) {
-        totalSeconds = 0;
-        clearInterval(timer);
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+      function tick() {
+        if (totalSeconds <= 0) {
+          totalSeconds = 0;
+          clearInterval(timer);
+        }
+
+        var h = Math.floor(totalSeconds / 3600);
+        var m = Math.floor((totalSeconds % 3600) / 60);
+        var s = totalSeconds % 60;
+
+        // Update display: hh:mm:ss
+        if (timerEl) timerEl.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+
+        // Update ring: dashoffset maps remaining fraction to arc
+        // offset=0 → full ring, offset=CIRC → empty ring
+        if (ringEl) {
+          var fraction = totalSeconds / totalDuration;
+          // Clamp between 0 and 1
+          fraction = Math.min(1, Math.max(0, fraction));
+          // We keep the CSS pulse animation for feel but override its keyframe via inline style
+          var offset = CIRC * (1 - fraction);
+          ringEl.style.strokeDashoffset = offset.toFixed(2);
+          // Remove the CSS animation so JS is in full control
+          ringEl.style.animation = 'none';
+        }
+
+        totalSeconds--;
       }
 
-      var h = Math.floor(totalSeconds / 3600);
-      var m = Math.floor((totalSeconds % 3600) / 60);
-      var s = totalSeconds % 60;
-
-      // Update display: hh:mm:ss
-      if (timerEl) timerEl.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
-
-      // Update ring: dashoffset maps remaining fraction to arc
-      // offset=0 → full ring, offset=CIRC → empty ring
-      if (ringEl) {
-        var fraction = totalSeconds / totalDuration;
-        // Clamp between 0 and 1
-        fraction = Math.min(1, Math.max(0, fraction));
-        // We keep the CSS pulse animation for feel but override its keyframe via inline style
-        var offset = CIRC * (1 - fraction);
-        ringEl.style.strokeDashoffset = offset.toFixed(2);
-        // Remove the CSS animation so JS is in full control
-        ringEl.style.animation = 'none';
-      }
-
-      totalSeconds--;
-    }
-
-    // Run immediately then every second
-    tick();
-    var timer = setInterval(tick, 1000);
-  })();
-</script>
+      // Run immediately then every second
+      tick();
+      var timer = setInterval(tick, 1000);
+    })();
+  </script>
 
 </body>
+
 </html>
