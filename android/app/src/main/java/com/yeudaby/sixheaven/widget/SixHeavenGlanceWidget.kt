@@ -12,10 +12,10 @@ import androidx.glance.appwidget.GlanceAppWidget
 import androidx.glance.appwidget.GlanceAppWidgetReceiver
 import androidx.glance.appwidget.provideContent
 import androidx.glance.layout.*
-import androidx.glance.material3.ColorProviders
 import androidx.glance.text.*
 import androidx.glance.unit.ColorProvider
 import com.yeudaby.sixheaven.MainActivity
+import com.yeudaby.sixheaven.R
 import com.yeudaby.sixheaven.data.datastore.KashrutDataStore
 import com.yeudaby.sixheaven.data.model.KashrutState
 import com.yeudaby.sixheaven.util.TimeUtils
@@ -24,7 +24,6 @@ import kotlinx.coroutines.flow.first
 class SixHeavenGlanceWidget : GlanceAppWidget() {
 
     override suspend fun provideGlance(context: Context, id: GlanceId) {
-        // Read current state directly from DataStore (Glance can't use Hilt DI easily)
         val dataStore = KashrutDataStore(context)
         val timerState = dataStore.timerState.first()
 
@@ -53,39 +52,50 @@ class SixHeavenGlanceWidget : GlanceAppWidget() {
             KashrutState.DAIRY   -> ColorProvider(Color(0xFF1A8FBF))
             KashrutState.NEUTRAL -> ColorProvider(Color(0xFF27AE60))
         }
+        val statusLabel = when (state) {
+            KashrutState.NEUTRAL -> "פרווה ✓"
+            KashrutState.MEATY   -> "🥩 ממתינים לחלבי"
+            KashrutState.DAIRY   -> "🥛 ממתינים לבשרי"
+        }
 
         Box(
             modifier = GlanceModifier
                 .fillMaxSize()
                 .background(bgColor)
                 .clickable(actionStartActivity<MainActivity>())
-                .padding(16.dp),
+                .padding(12.dp),
             contentAlignment = Alignment.Center
         ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalAlignment = Alignment.CenterVertically
             ) {
+                // App logo
+                Image(
+                    provider = ImageProvider(R.drawable.logo),
+                    contentDescription = "SixHeaven",
+                    modifier = GlanceModifier.size(40.dp)
+                )
+
+                Spacer(GlanceModifier.height(6.dp))
+
                 Text(
-                    text = when (state) {
-                        KashrutState.NEUTRAL -> "פרווה ✓"
-                        KashrutState.MEATY   -> "🥩 ממתינים לחלבי"
-                        KashrutState.DAIRY   -> "🥛 ממתינים לבשרי"
-                    },
+                    text = statusLabel,
                     style = TextStyle(
                         color = textColor,
                         fontWeight = FontWeight.Bold,
-                        fontSize = 14.sp
+                        fontSize = 13.sp
                     )
                 )
+
                 if (isActive) {
-                    Spacer(GlanceModifier.height(4.dp))
+                    Spacer(GlanceModifier.height(2.dp))
                     Text(
                         text = TimeUtils.formatMillisToHhMmSs(remainingMs),
                         style = TextStyle(
                             color = textColor,
                             fontWeight = FontWeight.Bold,
-                            fontSize = 20.sp
+                            fontSize = 19.sp
                         )
                     )
                 }

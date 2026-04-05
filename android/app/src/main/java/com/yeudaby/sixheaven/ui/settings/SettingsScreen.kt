@@ -162,6 +162,9 @@ fun SettingsScreen(
                     )
                 }
 
+                // ── About / Credits ───────────────────────────────────────────
+                AboutCard(modifier = Modifier.fillMaxWidth())
+
                 Spacer(Modifier.height(16.dp))
             }
         }

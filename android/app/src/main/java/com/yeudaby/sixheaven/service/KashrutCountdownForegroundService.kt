@@ -106,7 +106,7 @@ class KashrutCountdownForegroundService : Service() {
         text: String,
         color: Int
     ) = NotificationCompat.Builder(this, CHANNEL_COUNTDOWN)
-        .setSmallIcon(R.drawable.ic_launcher_foreground)
+        .setSmallIcon(R.drawable.ic_six_heaven)
         .setContentTitle(title)
         .setContentText(text)
         .setColor(color)                    // brand accent stripe / icon tint
