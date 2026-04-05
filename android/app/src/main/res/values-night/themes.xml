@@ -1,0 +1,7 @@
+<resources>
+    <!-- Dark mode base – Compose handles actual dark theming via DynamicColorScheme / DarkColorScheme -->
+    <style name="Theme.SixHeaven" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+</resources>

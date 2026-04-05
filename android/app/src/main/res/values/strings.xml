@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SixHeaven</string>
+
+    <!-- State labels -->
+    <string name="state_pareve">אתה פרווה</string>
+    <string name="state_waiting_dairy">ממתינים לחלבי…</string>
+    <string name="state_waiting_meat">ממתינים לבשרי…</string>
+
+    <!-- Buttons -->
+    <string name="btn_ate_meat">🥩 אכלתי בשרי</string>
+    <string name="btn_ate_dairy">🥛 אכלתי חלבי</string>
+    <string name="btn_cancel">ביטול טיימר</string>
+
+    <!-- Settings -->
+    <string name="settings_title">הגדרות</string>
+    <string name="setting_wait_meat">המתנה אחרי בשרי</string>
+    <string name="setting_wait_dairy">המתנה אחרי חלבי</string>
+
+    <!-- Custom time picker -->
+    <string name="custom_time_title">זמן מותאם אישית</string>
+    <string name="custom_time_hours">שעות</string>
+    <string name="custom_time_minutes">דקות</string>
+    <string name="custom_time_label">מותאם אישית…</string>
+    <string name="custom_time_current">מותאם אישית: %1$dh %2$02dm</string>
+    <string name="confirm">אישור</string>
+    <string name="cancel_word">ביטול</string>
+
+    <!-- Notification permission -->
+    <string name="permission_title">הרשאת התראות</string>
+    <string name="permission_rationale">כדי לקבל התראה כשהמתינה הסתיימה, האפליקציה צריכה הרשאת התראות.</string>
+    <string name="permission_grant">אשר הרשאה</string>
+    <string name="permission_later">אחר כך</string>
+
+    <!-- Notifications – countdown (foreground service) -->
+    <string name="notification_countdown_default">טוען…</string>
+    <string name="notif_countdown_title_meat">🥩 ממתינים לחלבי</string>
+    <string name="notif_countdown_title_dairy">🥛 ממתינים לבשרי</string>
+    <string name="notif_remaining_format">נותר %1$s</string>
+
+    <!-- Notifications – completion alert -->
+    <string name="notif_end_meat">אתה שוב חלבי! בתאבון 🧀</string>
+    <string name="notif_end_dairy">אתה שוב בשרי! בתאבון 🥩</string>
+
+    <!-- Widget -->
+    <string name="widget_label">SixHeaven Widget</string>
+</resources>
