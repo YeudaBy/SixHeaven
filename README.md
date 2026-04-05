@@ -67,3 +67,14 @@
 ## 📜 רישיון (License)
 
 פרויקט זה מופץ תחת רישיון MIT. ראה קובץ `LICENSE` למידע נוסף.
+
+-----
+
+## 🤖 Acknowledgments & AI Transparency
+This project was developed with the assistance of advanced AI models to ensure high-quality code, modern design, and optimized user experience. Special thanks to:
+
+Google Gemini – For strategic planning, visual branding, and asset generation.
+
+Anthropic Claude & Claude Code – For core application architecture and landing page implementation.
+
+OpenAI (ChatGPT & Codex) – For logic refinement and code optimization.
