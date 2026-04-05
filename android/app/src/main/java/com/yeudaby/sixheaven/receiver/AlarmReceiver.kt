@@ -71,7 +71,7 @@ class AlarmReceiver : BroadcastReceiver() {
         )
 
         val notification = NotificationCompat.Builder(context, CHANNEL_ALERT)
-            .setSmallIcon(R.drawable.ic_six_heaven)
+            .setSmallIcon(R.drawable.logo)
             .setLargeIcon(context.logoBitmap())
             .setContentTitle(context.getString(R.string.app_name))
             .setContentText(message)

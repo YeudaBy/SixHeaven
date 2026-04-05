@@ -105,7 +105,7 @@ class KashrutCountdownForegroundService : Service() {
 
     private fun buildNotification(title: String, text: String, color: Int) =
         NotificationCompat.Builder(this, CHANNEL_COUNTDOWN)
-            .setSmallIcon(R.drawable.ic_six_heaven)
+            .setSmallIcon(R.drawable.logo)
             .setLargeIcon(logoBitmap)
             .setContentTitle(title)
             .setContentText(text)
