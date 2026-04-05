@@ -4,7 +4,7 @@
 <img src="/landing/logo.svg" alt="SixHeaven Logo" width="200px"\>
 </p\>
 
-# SixHeaven - Kashrut Wait Timer 🥩 ✨ 🥛
+# [SixHeaven](https://sixheaven.yeudaby.com/) - Kashrut Wait Timer 🥩 ✨ 🥛
 
 אפליקציית **SixHeaven** היא אפליקציית אנדרואיד מודרנית, נקייה וקלה לשימוש למעקב אחר שעות המתנה בין בשר לחלב (ולהיפך), המעוצבת בסטנדרטים הגבוהים ביותר של UX/UI. האפליקציה נבנתה כדי להתאים לכל מנהג (Minhag) בצורה גמישה ואלגנטית.
 
