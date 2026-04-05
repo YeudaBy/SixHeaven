@@ -71,7 +71,7 @@
         <service
             android:name=".tile.SixHeavenTileService"
             android:exported="true"
-            android:icon="@drawable/ic_six_heaven"
+            android:icon="@drawable/logo"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>

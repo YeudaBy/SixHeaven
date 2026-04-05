@@ -5,6 +5,8 @@ import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.graphics.Color
 import androidx.core.app.NotificationCompat
 import com.yeudaby.sixheaven.MainActivity
@@ -70,6 +72,7 @@ class AlarmReceiver : BroadcastReceiver() {
 
         val notification = NotificationCompat.Builder(context, CHANNEL_ALERT)
             .setSmallIcon(R.drawable.ic_six_heaven)
+            .setLargeIcon(context.logoBitmap())
             .setContentTitle(context.getString(R.string.app_name))
             .setContentText(message)
             .setStyle(NotificationCompat.BigTextStyle().bigText(message))
@@ -87,4 +90,14 @@ class AlarmReceiver : BroadcastReceiver() {
     companion object {
         const val EXTRA_STATE = "extra_kashrut_state"
     }
+}
+
+/** Rasterises logo.xml at 48dp so it can be used as a large notification icon. */
+private fun Context.logoBitmap(): Bitmap {
+    val px = (48 * resources.displayMetrics.density).toInt()
+    val drawable = checkNotNull(getDrawable(R.drawable.logo))
+    val bmp = Bitmap.createBitmap(px, px, Bitmap.Config.ARGB_8888)
+    drawable.setBounds(0, 0, px, px)
+    drawable.draw(Canvas(bmp))
+    return bmp
 }

@@ -67,7 +67,7 @@ fun MainScreen(
                             Text(
                                 text = stringResource(R.string.app_name),
                                 style = MaterialTheme.typography.titleLarge.copy(
-                                    fontFamily = FontFamily.SansSerif,
+                                    fontFamily = FontFamily.Serif,
                                     fontStyle = FontStyle.Italic,
                                     fontWeight = FontWeight.Bold
                                 ),

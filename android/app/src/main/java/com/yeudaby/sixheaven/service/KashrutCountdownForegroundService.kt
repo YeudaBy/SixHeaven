@@ -5,6 +5,8 @@ import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.content.pm.ServiceInfo
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.graphics.Color
 import android.os.Build
 import android.os.IBinder
@@ -38,6 +40,9 @@ class KashrutCountdownForegroundService : Service() {
     private var tickJob: Job? = null
     private var widgetTickCount = 0
 
+    // Cached once to avoid re-drawing the vector drawable on every tick
+    private val logoBitmap: Bitmap by lazy { buildLogoBitmap() }
+
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         when (intent?.action) {
             ACTION_START -> startCountdown()
@@ -47,8 +52,6 @@ class KashrutCountdownForegroundService : Service() {
     }
 
     private fun startCountdown() {
-        // Post a branded placeholder immediately so Android doesn't kill us
-        // (real content arrives within 1 s from the ticker)
         val placeholder = buildNotification(
             title = getString(R.string.app_name),
             text  = getString(R.string.notification_countdown_default),
@@ -100,22 +103,29 @@ class KashrutCountdownForegroundService : Service() {
         )
     }
 
-    /** Builds a styled foreground notification with the brand accent color. */
-    private fun buildNotification(
-        title: String,
-        text: String,
-        color: Int
-    ) = NotificationCompat.Builder(this, CHANNEL_COUNTDOWN)
-        .setSmallIcon(R.drawable.ic_six_heaven)
-        .setContentTitle(title)
-        .setContentText(text)
-        .setColor(color)                    // brand accent stripe / icon tint
-        .setColorized(false)                // keep standard notification background
-        .setContentIntent(launchPendingIntent())
-        .setOngoing(true)
-        .setSilent(true)
-        .setOnlyAlertOnce(true)
-        .build()
+    private fun buildNotification(title: String, text: String, color: Int) =
+        NotificationCompat.Builder(this, CHANNEL_COUNTDOWN)
+            .setSmallIcon(R.drawable.ic_six_heaven)
+            .setLargeIcon(logoBitmap)
+            .setContentTitle(title)
+            .setContentText(text)
+            .setColor(color)
+            .setColorized(false)
+            .setContentIntent(launchPendingIntent())
+            .setOngoing(true)
+            .setSilent(true)
+            .setOnlyAlertOnce(true)
+            .build()
+
+    /** Rasterises logo.xml at 192 px so it can be used as a large notification icon. */
+    private fun buildLogoBitmap(): Bitmap {
+        val px = (48 * resources.displayMetrics.density).toInt()
+        val drawable = checkNotNull(getDrawable(R.drawable.logo))
+        val bmp = Bitmap.createBitmap(px, px, Bitmap.Config.ARGB_8888)
+        drawable.setBounds(0, 0, px, px)
+        drawable.draw(Canvas(bmp))
+        return bmp
+    }
 
     private fun launchPendingIntent() = PendingIntent.getActivity(
         this, 0,
