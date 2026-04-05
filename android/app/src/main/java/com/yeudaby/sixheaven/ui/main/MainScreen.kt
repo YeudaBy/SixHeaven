@@ -59,7 +59,7 @@ fun MainScreen(
                             horizontalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
                             Image(
-                                painter = painterResource(R.drawable.logo),
+                                painter = painterResource(R.drawable.logo_full),
                                 contentDescription = null,
                                 contentScale = ContentScale.Fit,
                                 modifier = Modifier.size(30.dp)

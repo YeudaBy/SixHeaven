@@ -105,7 +105,7 @@ class KashrutCountdownForegroundService : Service() {
 
     private fun buildNotification(title: String, text: String, color: Int) =
         NotificationCompat.Builder(this, CHANNEL_COUNTDOWN)
-            .setSmallIcon(R.drawable.logo)
+            .setSmallIcon(R.drawable.logo_full)
             .setLargeIcon(logoBitmap)
             .setContentTitle(title)
             .setContentText(text)
@@ -120,7 +120,7 @@ class KashrutCountdownForegroundService : Service() {
     /** Rasterises logo.xml at 192 px so it can be used as a large notification icon. */
     private fun buildLogoBitmap(): Bitmap {
         val px = (48 * resources.displayMetrics.density).toInt()
-        val drawable = checkNotNull(getDrawable(R.drawable.logo))
+        val drawable = checkNotNull(getDrawable(R.drawable.logo_full))
         val bmp = Bitmap.createBitmap(px, px, Bitmap.Config.ARGB_8888)
         drawable.setBounds(0, 0, px, px)
         drawable.draw(Canvas(bmp))

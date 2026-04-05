@@ -61,7 +61,7 @@ fun AboutCard(modifier: Modifier = Modifier) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     // App logo
                     Image(
-                        painter = painterResource(R.drawable.logo),
+                        painter = painterResource(R.drawable.logo_full),
                         contentDescription = "SixHeaven logo",
                         contentScale = ContentScale.Fit,
                         modifier = Modifier.size(80.dp)

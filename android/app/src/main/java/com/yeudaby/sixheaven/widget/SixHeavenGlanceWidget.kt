@@ -72,7 +72,7 @@ class SixHeavenGlanceWidget : GlanceAppWidget() {
             ) {
                 // App logo
                 Image(
-                    provider = ImageProvider(R.drawable.logo),
+                    provider = ImageProvider(R.drawable.logo_full),
                     contentDescription = "SixHeaven",
                     modifier = GlanceModifier.size(40.dp)
                 )
